@@ -45,7 +45,7 @@ if [ -d "${APPFRAMEWORKS}" ]; then
     mkdir -p "${SWIFTSUPPORT}"
     for SWIFT_LIB in $(ls -1 "${APPFRAMEWORKS}"); do
     	#may throw an error, saying it can't find a *.framework, this is normal
-        cp "${DEVELOPER_DIR}/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/${SWIFT_LIB}" "${SWIFTSUPPORT}" >/dev/null 2>/dev/null
+        cp "${DEVELOPER_DIR}/Toolchains/Swift_2.3.xctoolchain/usr/lib/swift/iphoneos/${SWIFT_LIB}" "${SWIFTSUPPORT}" >/dev/null 2>/dev/null
     done
 fi
 
